@@ -1,0 +1,11 @@
+<%= image_tag @student.profile_image  if  @student.profile_image.attached? %>
+<h1><%= @student.first_name + @student.last_name %></h1>
+<p>
+<strong>Course: </strong> <%= @student.course_name %><br />
+<strong>Grade: </strong> <%= @student.grade %><br />
+<strong>Created Date:</strong> <%= @student.created_at %><br />
+</p>
+
+
+<%= link_to 'Back', {:action => 'list'} %>
+
